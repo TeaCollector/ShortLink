@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS link
+(
+    id       INT AUTO_INCREMENT PRIMARY KEY,
+    link     VARCHAR(150) NOT NULL,
+    original VARCHAR(300) NOT NULL,
+    rank     INT NULL_TO_DEFAULT,
+    `count`  BIGINT NULL_TO_DEFAULT
+);
